@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5F23D2D51F41C3800077DDA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23D2D41F41C3800077DDA4 /* AppDelegate.swift */; };
-		5F23D2D71F41C3800077DDA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23D2D61F41C3800077DDA4 /* ViewController.swift */; };
 		5F23D2DA1F41C3800077DDA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F23D2D81F41C3800077DDA4 /* Main.storyboard */; };
 		5F23D2DD1F41C3800077DDA4 /* Art_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F23D2DB1F41C3800077DDA4 /* Art_Book.xcdatamodeld */; };
 		5F23D2DF1F41C3800077DDA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F23D2DE1F41C3800077DDA4 /* Assets.xcassets */; };
 		5F23D2E21F41C3800077DDA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F23D2E01F41C3800077DDA4 /* LaunchScreen.storyboard */; };
 		5F23D2ED1F41C3800077DDA4 /* Art_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23D2EC1F41C3800077DDA4 /* Art_BookTests.swift */; };
+		5F23D2F91F41C6600077DDA4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23D2F81F41C6600077DDA4 /* TableViewController.swift */; };
+		5F23D2FB1F41C8A00077DDA4 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23D2FA1F41C8A00077DDA4 /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +30,6 @@
 /* Begin PBXFileReference section */
 		5F23D2D11F41C3800077DDA4 /* Art Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F23D2D41F41C3800077DDA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F23D2D61F41C3800077DDA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F23D2D91F41C3800077DDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F23D2DC1F41C3800077DDA4 /* Art_Book.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Art_Book.xcdatamodel; sourceTree = "<group>"; };
 		5F23D2DE1F41C3800077DDA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +38,8 @@
 		5F23D2E81F41C3800077DDA4 /* Art BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Art BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F23D2EC1F41C3800077DDA4 /* Art_BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Art_BookTests.swift; sourceTree = "<group>"; };
 		5F23D2EE1F41C3800077DDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F23D2F81F41C6600077DDA4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5F23D2FA1F41C8A00077DDA4 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +81,10 @@
 		5F23D2D31F41C3800077DDA4 /* Art Book */ = {
 			isa = PBXGroup;
 			children = (
-				5F23D2D41F41C3800077DDA4 /* AppDelegate.swift */,
-				5F23D2D61F41C3800077DDA4 /* ViewController.swift */,
+				5F23D2F81F41C6600077DDA4 /* TableViewController.swift */,
+				5F23D2F71F41C6060077DDA4 /* supporting files */,
 				5F23D2D81F41C3800077DDA4 /* Main.storyboard */,
-				5F23D2DE1F41C3800077DDA4 /* Assets.xcassets */,
-				5F23D2E01F41C3800077DDA4 /* LaunchScreen.storyboard */,
-				5F23D2E31F41C3800077DDA4 /* Info.plist */,
+				5F23D2FA1F41C8A00077DDA4 /* ItemViewController.swift */,
 				5F23D2DB1F41C3800077DDA4 /* Art_Book.xcdatamodeld */,
 			);
 			path = "Art Book";
@@ -97,6 +97,17 @@
 				5F23D2EE1F41C3800077DDA4 /* Info.plist */,
 			);
 			path = "Art BookTests";
+			sourceTree = "<group>";
+		};
+		5F23D2F71F41C6060077DDA4 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				5F23D2D41F41C3800077DDA4 /* AppDelegate.swift */,
+				5F23D2DE1F41C3800077DDA4 /* Assets.xcassets */,
+				5F23D2E01F41C3800077DDA4 /* LaunchScreen.storyboard */,
+				5F23D2E31F41C3800077DDA4 /* Info.plist */,
+			);
+			name = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F23D2D71F41C3800077DDA4 /* ViewController.swift in Sources */,
 				5F23D2D51F41C3800077DDA4 /* AppDelegate.swift in Sources */,
+				5F23D2FB1F41C8A00077DDA4 /* ItemViewController.swift in Sources */,
+				5F23D2F91F41C6600077DDA4 /* TableViewController.swift in Sources */,
 				5F23D2DD1F41C3800077DDA4 /* Art_Book.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
